@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CarVentureWeekSix</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    
+</head>
+<body>
+    <header class="page">
+            <div class="container">
+                <div class="ven"><a  asp-area="" asp-page="/Index">CarVenture</a></div>
+                <div class="listCon">
+                    <ul class="navbar">
+                        <li class="nav-item">
+                            <a asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-area="" asp-page="/Cars">Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-area="" asp-page="/Offers">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-area="" asp-page="/Locations">Locations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-area="" asp-page="/Contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="btn"><button class="signUp">Sign Up</button></div>
+                </div>
+            </div>
+    </header>
+    <div class="">
+            <main role="main" class="">
+                    @RenderBody()
+            </main>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer_bar">
+                <p><a href="index.html">CarVenture</a></p>
+
+                <p>Rides for the daily achievers</p>
+            </div>
+            <div class="sub_footer">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="sub_footer">
+                <h3>Features</h3>
+                <ul>
+                    <li><a href="#">Vehicle Tracker</a></li>
+                    <li><a href="#">iOS & Android Apps</a></li>
+                    <li><a href="#">Business Trips</a></li>
+                    <li><a href="#">Locations</a></li>
+                </ul>
+            </div>
+
+            <div class="sub_footer">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="#">info@teamapp.com</a></li>
+                    <li>(302) 555-0107</li>
+                    <li>2972 Westheimer Rd. Santa Ana, Illinois 85486 </li>
+                </ul>
+            </div>
+
+            <div class="sub_footer">
+                <h3>Get deals and discounts</h3>
+                <ul>
+                    <li>Subscribe to our newsletter</li>
+                </ul>
+
+                <form action="">
+                    <input type="email" class="email" placeholder="Email">
+                </form>
+            </div>
+            </div>
+
+            <div class="copy">&copy; Copyright Team Inc.</div>
+        </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

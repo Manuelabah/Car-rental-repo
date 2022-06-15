@@ -1,0 +1,227 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class="page">
+<div class="container-section">
+    <div class="textBox"> Renting cars have never been this easy </div>
+    <div class="textNext">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</div>
+</div>
+<div class="search">
+    <div class="pick">
+        <p >Pick Up Location</p>
+        <select name="Select Location" class="search-item">
+            <option value="select location" >Select Location</option>
+        </select>
+    </div>
+
+    <div class="pick">
+        <p >Pick Up Date</p>
+        <select name="Pickup Date" class="search-item">
+            <option value="pick date" >Select Date</option>
+        </select>
+    </div>
+    <div class="pick">
+        <p>Return Date</p>
+        <select name="Return Date" class="search-item">
+            <option value="return date" >Select Date</option>
+        </select>
+    </div>
+
+    <Button class="search-btn">Search for Cars</Button>
+</div>
+
+<div class="trusted">
+    <img src="~/images/Trusted_By_Section.png" />
+</div>
+
+<section class="featured_cars">
+            <p>Our Featured Cars</p>
+
+            <div class="buttons">
+                   <i class="fa fa-chevron-circle-left" ></i>
+                   <i class="fa fa-chevron-circle-right" ></i>
+            </div>
+
+            <div class="car">
+                <div class="toyota">
+                    <img src="~/images/CarBlack.png" alt="Toyota Corolla T-20 black">
+                    <p>Toyota Corolla T-20</p>
+                    <div >
+                        <i class="fa fa-check-circle"></i>
+                        <label class="checked">Air Conditioned</label><br>
+                        <i class="fa fa-check-circle"></i>
+                        <label class="checked">Bluetooth Sound System</label><br>
+                        <i class="fa fa-check-circle"></i>
+                        <label class="checked">Sunroof Available</label><br>
+                    </div>
+
+                    <div class="button">
+                        <button id="RentNow">Rent Now</button>
+                    </div>
+                </div>
+
+                <div class="toyota">
+                    <img src="~/images/CarRed.png" alt="Toyota Corolla T-20 red">
+                    <p>Toyota Corolla T-20</p>
+                    <div >
+                        <i class="fa fa-check-circle"></i>
+                        <label class="checked">Air Conditioned</label><br>
+                        <i class="fa fa-check-circle"></i>
+                        <label class="checked">Bluetooth Sound System</label><br>
+                        <i class="fa fa-check-circle"></i>
+                        <label class="checked">Sunroof Available</label><br>
+                    </div>
+
+                    <div class="button">
+                        <button id="RentNow">Rent Now</button>
+                    </div>
+                </div>
+
+                <div class="toyota">
+                    <img src="~/images/CarWhite.png" alt="Toyota Corolla T-20 white">
+                    <p>Toyota Corolla T-20</p>
+                        <div action="#">
+                            <i class="fa fa-check-circle"></i>
+                            <label class="checked">Air Conditioned</label><br>
+                            <i class="fa fa-check-circle"></i>
+                            <label class="checked">Bluetooth Sound System</label><br>
+                            <i class="fa fa-check-circle"></i>
+                            <label class="checked">Sunroof Available</label><br>
+                         </div>
+                    <div class="button">
+                        <button id="RentNow">Rent Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="holder">
+            <h3>
+                Why We Are Different
+            </h3>
+            <p class="first">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            
+            <div class="second_container">
+                <div class="container_item">
+                    <img src="~/images/easy.png" alt="#">
+
+                   <div class="inline-box">
+                    <h2>Easy Booking</h2>
+                    <p class="second-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
+                   </div>
+                </div>
+
+                <div class="container_item">
+                    <img src="~/images/Shield.png" alt="3">
+
+                    <div class="inline-box">
+                       <h2> Secure Payments</h2>
+                       <p class="second-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    </div>
+                </div>
+
+                <div class="container_item">
+                    <img src="~/images/track.png" alt="">
+
+                    <div class="inline-box">
+                        <h2>24/7 Tracking</h2>
+                        <p class="second-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="what_people_say">
+            <h2>What do people say about us?</h2>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+
+            <div class="inner_container">
+                <div class="left">
+                    <img src="~/images/Testimonial_Image.png" alt="Testimonials" class="center">
+                </div>
+
+                <div class="right">
+                    <p>“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.“</p>
+                    
+                    <hr>
+                    
+                    <p class="name"><span>Anna De’Suza,</span> 
+                    
+                    <span>CEO at SpaceX</span> </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stories">
+
+            <h2>Read Our Stories</h2>
+
+            <div class="sub-stories">
+
+                <div class="story" >
+                    <img src="~/images/Blog_Image.png" alt="car 1"> 
+                    <div class="inner-text">
+                        <button>Tags</button>
+                        <h3>Start a blog to reach your creative peak</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <a href="#">Find Out More &#8594;</a>
+                    </div>
+                </div>
+
+                <div class="story">
+                    <img src="~/images/Blog_Image_volve.png" alt="car 2">
+                    <div class="inner-text">
+                        <button>Tags</button>
+                        <h3>Starting your traveling blog with Vasco</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <a href="#">Find Out More &#8594;</a>
+                    </div>
+                </div>
+
+                <div class="story">
+                    <img src="~/images/Blog_Image_honde.png" alt="car 3">
+                    <div class="inner-text">
+                        <button>Tags</button>
+                        <h3>Caring is the new marketing</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <div><a href="#">Find Out More &#8594;</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secondary-menu-bar">
+
+           <div class="blue-box">
+                <h3>Find Your Next Long Drive Now!</h3>
+
+                <div class="secondary-search-bar">
+                    <div class="location">
+                        <p>Pick Up Location</p>
+                        <select name="Select Location" id="select-location" class="search-bar-item">
+                            <option value="select-location" >Select Location</option>
+                        </select>
+                    </div>
+        
+                    <div class="pickup_date">
+                        <p>Pick Up Date</p>
+                        <select name="Pickup Date" id="select-pickup_date" class="search-bar-item">
+                            <option value="pick a date" >Select Date</option>
+                        </select>
+                    </div>
+        
+                    <div class="return_date">
+                        <p>Return Date</p>
+                        <select name="Return Date" id="select-return_date" class="search-bar-item">
+                            <option value="return date" >Select Date</option>
+                        </select>
+                    </div>
+        
+                    <Button class="search-btn">Search for Cars</Button>
+        
+                </div>
+
+           </div>
+
+        </section>
+</div>
